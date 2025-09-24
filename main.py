@@ -11,7 +11,7 @@ with st.form("Infórmale a Copydio 🫡"):
     redesSociales = st.text_input("### Paso 1: ¿En que redes sociales va a estar este copy?")
     intencionComunica = st.text_input("### Paso 2: ¿Qué quieres comunicar?")
     api_key = st.text_input("### Paso 3: Ingresa tu API Key de Google Gemini (necesario para ejecutar el modelo)", type="password")
-    st.markdown("Si no tienes una API Key, sigue los pasos en este [link](https://developers.generativeai.google/tutorials/get-api-key) para obtener una.")
+    st.markdown("Si no tienes una API Key, obtenla en este [link](https://aistudio.google.com/app/api-keys).")
     files = st.file_uploader("### Paso 4: Sube el contenido base para generar el copy")
 
     submitted = st.form_submit_button("Generar copys 🚀")
