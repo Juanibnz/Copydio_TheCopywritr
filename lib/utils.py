@@ -11,8 +11,10 @@ def copydioPromptCreation(redesSociales, intencionComunica):
 
 
 def modelExec(content, redesSociales, intencionComunica, api_key):
-    client = genai.Client(api_key)
     prompt = copydioPromptCreation(redesSociales, intencionComunica)
+    client = genai.Client(api_key)
+    print("API Key recibida:", api_key)  # Verifica que la API Key se reciba correctamente
+    print("Contenido recibido:", content)  # Verifica que el contenido se reciba correctamente
 
     # Create a temporary file to store the uploaded content
     with tempfile.NamedTemporaryFile(delete=False, suffix=f".{content.name.split('.')[-1]}") as tmp_file:
