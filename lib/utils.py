@@ -11,7 +11,7 @@ def copydioPromptCreation(redesSociales, intencionComunica):
 
 
 def modelExec(content, redesSociales, intencionComunica, api):
-    client = genai.Client(api)
+    client = genai.Client(api_key=api)
     prompt = copydioPromptCreation(redesSociales, intencionComunica)
     print("API Key recibida:", api)  # Verifica que la API Key se reciba correctamente
     print("Contenido recibido:", content)  # Verifica que el contenido se reciba correctamente
