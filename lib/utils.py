@@ -3,8 +3,8 @@ import os
 from google import genai
 import time
 
-api_key = "AIzaSyDz935qKb4GMaXzLCyf1Nd1hTQofvKJRBA"
-client = genai.Client(api_key=api_key)
+
+
 
 def copydioPromptCreation(redesSociales, intencionComunica):
 
@@ -12,7 +12,9 @@ def copydioPromptCreation(redesSociales, intencionComunica):
 
     return promptCopydio
 
-def modelExec(content, redesSociales, intencionComunica):
+
+def modelExec(content, redesSociales, intencionComunica, api_key):
+    client = genai.Client(api_key)
     prompt = copydioPromptCreation(redesSociales, intencionComunica)
 
     # Create a temporary file to store the uploaded content
