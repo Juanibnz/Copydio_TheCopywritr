@@ -24,4 +24,5 @@ if submitted:
     show_response = utils.modelExec(files, redesSociales, intencionComunica, api)
 
     if show_response:
-        st.text(show_response)
+        st.divider()
+        st.markdown(show_response)
