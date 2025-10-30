@@ -9,7 +9,7 @@ st.divider()
 
 with st.form("Infórmale a Copydio 🫡"):
     redesSociales = st.text_input("### Paso 1: ¿En que redes sociales va a estar este copy?")
-    intencionComunica = st.text_input("### Paso 2: ¿Qué quieres comunicar?")
+    intencionComunica = st.text_area("### Paso 2: ¿Qué quieres comunicar?")
     api = st.text_input("### Paso 3: Ingresa tu API Key de Google Gemini (necesario para ejecutar el modelo)", type="password")
     st.markdown("Si no tienes una API Key, obtenla en este [link](https://aistudio.google.com/app/api-keys).")
     files = st.file_uploader("### Paso 4: Sube el contenido base para generar el copy")
